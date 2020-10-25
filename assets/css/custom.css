@@ -1,0 +1,43 @@
+header h1{
+    font-family: 'Bangers', cursive;
+}
+html,body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header h2 span{
+    font-weight: 600;
+}
+h2.contact{
+    text-align: center;
+}
+
+.language_box{
+    /* background-color:rgba(255,255,255,0.4); */
+    position: fixed;
+    top:10px;
+    right: 10px;
+
+    border-radius: 20px;
+    padding:0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    padding:0;
+    background-color: transparent;
+    border:none;
+    margin:0;
+}
+
+.language_box .lang button{
+    font-size: 16px;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.language_box .language_eng{
+    padding-left:20px
+}
