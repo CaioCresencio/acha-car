@@ -1,0 +1,27 @@
+.card-container{
+    max-width: 350px;
+    margin-top: 5%;
+    text-align: center;
+}
+.card-container .round{
+    border-radius: 50%;
+}
+.card-container img{
+    max-width: 100%;
+    width: 150px;
+}
+.card-container p a{
+    color:#2cb8f7;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.card-container p{
+    margin-bottom: 10px;
+}
+.buttons a i{
+    color:#2cb8f7;
+    font-size: 40px;
+}
+.card-container .description{
+    font-size: 22px;
+}

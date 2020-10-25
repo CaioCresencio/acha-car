@@ -3,13 +3,14 @@
 <html>
 
 <head>
-	<title>Acha! CAR</title>
+	<title>Acha!Car</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/custom.css" />
 	<link rel="stylesheet" href="assets/css/contact-image.css" />
-	<link rel="stylesheet" href="assets/css/contact-image.scss" />
+	<link rel="stylesheet" href="assets/css/card-features.css" />
+	<!-- <link rel="stylesheet" href="assets/css/contact-image.scss" /> -->
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Raleway:wght@300;400;600&display=swap"
 		rel="stylesheet">
 	<noscript>
@@ -24,11 +25,23 @@
 			<div class="language_pt lang"><button type="button" id="btn_lang_pt">PT-BR</button></div>
 			<div class="language_eng lang"><button type="button" id="btn_lang_en">EN</button></div>
 		</div>
+		<div class="box_popover">
+			<div class="popover__wrapper">
+	
+				<h2 class="popover__title"><i class="far fa-question-circle"></i><span class="popover_acha">"Acha!"?</span></h2>
+	
+				<div class="popover__content">
+					<p class="popover__message" id="popover-description"></p>
+	
+				</div>
+			</div>
+		</div>
+	
 		<!-- Nav -->
 		<nav id="nav">
-			<a href="#" class="icon solid fa-home"><span>Home</span></a>
-			<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+			<a href="#" class="icon solid fa-lightbulb"><span>Home</span></a>
+			<a href="#work" class="icon solid fa-car"><span>Features</span></a>
+			<a href="#contact" class="icon solid fa-id-badge"><span>Contact</span></a>
 			<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
 		</nav>
 
@@ -38,7 +51,7 @@
 			<!-- Me -->
 			<article id="home" class="panel intro">
 				<header>
-					<h1>Acha! Car</h1>
+					<h1><img src="images/car-placeholder.png" alt="icon car"> Acha!Car</h1>
 					<p id="home_p1">Sabemos que diversas vezes você interrompeu os seus estudos, ou saiu da aula
 						correndo para pegar o transporte coletivo, né? E naquela vez que você ficou esperando uma carona
 						por muito tempo…
@@ -54,25 +67,50 @@
 					<span class="arrow icon solid fa-chevron-right"><span>Conheça nosso projeto</span></span>
 					<img src="images/car.jpg" alt="" />
 				</a>
+
 			</article>
 
 			<!-- Work -->
 			<article id="work" class="panel">
 				<header>
-					<h2><span>Funcionalidades</span> do App</h2>
+					<h2 id="title_feature"></h2>
 				</header>
-				<p>
-					Em breve!
-				</p>
+
 				<section>
-				
+					<div class="card">
+						<p id="feature1">
+						</p>
+					</div>
+					<div class="card ">
+						<p id="feature2">
+						</p>
+					</div>
+					<div class="card ">
+						<p id="feature3">
+						</p>
+					</div>
+
+					<div class="card ">
+						<p id="feature4">
+						</p>
+					</div>
+
+					<div class="card ">
+						<p id="feature5">
+						</p>
+					</div>
+
+					<div class="card ">
+						<p id="feature6">
+						</p>
+					</div>
 				</section>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact" class="panel">
 				<header>
-					<h2 class="contact">Pegue essa carona conosco :)</h2>
+					<h2 class="contact" id="contact-title">Pegue essa carona conosco :)</h2>
 				</header>
 
 				<div class="row">
@@ -82,7 +120,8 @@
 								<img class="round" src="/images/gabriela.jpg" alt="user" />
 								<h3>Gabriela Boniholi</h3>
 
-								<p>Graduanda em Educação Especial pela Universidade Federal de São Carlos</p>
+								<p class="description">Graduanda em Educação Especial pela Universidade Federal de São
+									Carlos</p>
 								<p><a
 										href="mailto:gabrielaboniholi@estudante.ufscar.br">gabrielaboniholi@estudante.ufscar.br</a>
 								</p>
@@ -97,12 +136,15 @@
 						</div>
 					</div>
 					<div class="col-6">
+
+
 						<div style="display: flex; justify-content:center">
 							<div class="card-container">
 								<img class="round" src="/images/pi.jpg" alt="user" />
 								<h3>Gabriel Pilegis Rocha</h3>
 
-								<p>Graduando em Engenharia Civil pela Universidade Federal de São Carlos</p>
+								<p class="description">Graduando em Engenharia Civil pela Universidade Federal de São
+									Carlos</p>
 								<p><a href="mailto:gabrielpilegis@gmail.com">gabrielpilegis@gmail.com</a></p>
 								<div class="buttons">
 									<a href="https://www.facebook.com/gabrielpilegis/" target="_blank"><i
@@ -123,8 +165,8 @@
 		<!-- Footer -->
 		<div id="footer">
 			<ul class="copyright">
-				<li>&copy; Untitled.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li>Desenvolvido por: <a href="https://www.linkedin.com/in/caiocresencio/" target="_blankv">Caio
+						Cresencio</a></li>
 			</ul>
 		</div>
 
@@ -136,6 +178,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/language_text.js"></script>
 	<script src="assets/js/language_control.js"></script>
 
 </body>
